@@ -6,6 +6,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 [![Swift](https://img.shields.io/badge/Swift-5.9+-F05138?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org)
 [![iOS](https://img.shields.io/badge/iOS-17+-000000?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/ios/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Wojciech_Olszak-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wojciech-olszak/)
+[![Useme](https://img.shields.io/badge/Useme-Hire_Me-22C55E?style=for-the-badge)](https://useme.com/pl/roles/contractor/wojciech-olszak,609067/)
 
 ---
 
@@ -29,12 +31,12 @@ Zbudowane z wykorzystaniem **Claude Code** (AI-assisted development), co pozwoli
 - **Stack:** HTML, CSS, JavaScript
 
 ### 2. Landing Page
-> Strona uslugowa z formularzem kontaktowym
+> Strona uslugowa z sekcja kontaktowa
 
 - Sekcje uslug z ikonami
-- Formularz kontaktowy z walidacja inline + EmailJS
+- Bezposrednie linki kontaktowe (Useme + email)
 - Responsywny layout z dark theme
-- **Stack:** HTML, CSS, JavaScript, EmailJS
+- **Stack:** HTML, CSS, JavaScript
 
 ### 3. Habit Tracker
 > Aplikacja iOS + web demo do sledzenia nawykow
@@ -65,7 +67,7 @@ useme/
 │   ├── css/main.css        # Style portfolio
 │   ├── habit-tracker/      # Web demo — Habit Tracker
 │   └── expense-calculator/ # Web demo — Kalkulator Wydatkow
-├── landing/                # Landing page z formularzem kontaktowym
+├── landing/                # Landing page z sekcja kontaktowa
 ├── ios/                    # Natywne aplikacje iOS
 │   ├── HabitTracker/       # Habit Tracker — SwiftUI
 │   └── ExpenseCalculator/  # Kalkulator Wydatkow — SwiftUI
@@ -120,12 +122,12 @@ Built with **Claude Code** (AI-assisted development), delivering the entire port
 - **Stack:** HTML, CSS, JavaScript
 
 ### 2. Landing Page
-> Service page with contact form
+> Service page with contact section
 
 - Service sections with icons
-- Contact form with inline validation + EmailJS integration
+- Direct contact links (Useme + email)
 - Responsive layout with dark theme
-- **Stack:** HTML, CSS, JavaScript, EmailJS
+- **Stack:** HTML, CSS, JavaScript
 
 ### 3. Habit Tracker
 > iOS app + web demo for tracking daily habits
@@ -156,7 +158,7 @@ useme/
 │   ├── css/main.css        # Portfolio styles
 │   ├── habit-tracker/      # Web demo — Habit Tracker
 │   └── expense-calculator/ # Web demo — Expense Calculator
-├── landing/                # Landing page with contact form
+├── landing/                # Landing page with contact section
 ├── ios/                    # Native iOS apps
 │   ├── HabitTracker/       # Habit Tracker — SwiftUI
 │   └── ExpenseCalculator/  # Expense Calculator — SwiftUI
@@ -227,7 +229,9 @@ Three-layer architecture: **Primitives** (raw values) → **Semantic** (meaning)
 
 **Wojciech Olszak** — iOS & Web Developer
 
-- [Useme Profile](https://useme.com/pl/roles/contractor/wojciech-olszak,609067/)
+- [Portfolio](https://selter2001.github.io/useme/web/)
+- [LinkedIn](https://www.linkedin.com/in/wojciech-olszak/)
+- [Useme](https://useme.com/pl/roles/contractor/wojciech-olszak,609067/)
 - [GitHub](https://github.com/selter2001)
 - [Email](mailto:wojtekolszak12@gmail.com)
 
