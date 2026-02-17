@@ -1,0 +1,118 @@
+/* ====================================
+   WEB-SPECIFIC STYLES
+   Uses only semantic tokens and component classes
+   ==================================== */
+
+/* --- Page Layout --- */
+body {
+  font-family: var(--font-family-base, -apple-system, sans-serif);
+  background-color: var(--color-bg-primary, #0E0E0E);
+  color: var(--color-text-primary, #F9FAFB);
+}
+
+.header {
+  padding-top: var(--spacing-section-gap, 3rem);
+  padding-bottom: var(--spacing-component-gap, 1.5rem);
+  border-bottom: 1px solid var(--color-border-default, #404040);
+  margin-bottom: var(--spacing-section-gap, 3rem);
+}
+
+.section {
+  margin-bottom: var(--spacing-section-gap, 3rem);
+}
+
+.footer {
+  margin-top: var(--spacing-section-gap, 3rem);
+  padding-top: var(--spacing-component-gap, 1.5rem);
+  padding-bottom: var(--spacing-component-gap, 1.5rem);
+  border-top: 1px solid var(--color-border-default, #404040);
+}
+
+/* --- Color Swatches --- */
+.color-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-component-gap, 1.5rem);
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--spacing-component-gap, 1.5rem);
+  margin-bottom: var(--spacing-component-gap, 1.5rem);
+}
+
+.color-swatch {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-element-gap, 0.75rem);
+  align-items: center;
+}
+
+.swatch {
+  width: 100%;
+  height: 80px;
+  border-radius: var(--border-radius-card, 0.5rem);
+  border: 1px solid var(--color-border-default, #404040);
+}
+
+/* Color swatch backgrounds */
+.bg-primary {
+  background-color: var(--color-bg-primary, #0E0E0E);
+}
+
+.bg-secondary {
+  background-color: var(--color-bg-secondary, #1A1A1A);
+}
+
+.bg-elevated {
+  background-color: var(--color-bg-elevated, #262626);
+}
+
+.interactive-primary {
+  background-color: var(--color-interactive-primary, #22C55E);
+}
+
+.interactive-secondary {
+  background-color: var(--color-interactive-secondary, #3A82FF);
+}
+
+.text-primary-swatch {
+  background-color: var(--color-text-primary, #F9FAFB);
+}
+
+.text-secondary-swatch {
+  background-color: var(--color-text-secondary, #F3F4F6);
+}
+
+.text-muted-swatch {
+  background-color: var(--color-text-muted, #E5E7EB);
+}
+
+/* --- Feature List --- */
+.feature-list {
+  list-style: disc;
+  padding-left: var(--spacing-component-gap, 1.5rem);
+}
+
+.feature-list li {
+  margin-bottom: var(--spacing-element-gap, 0.75rem);
+  color: var(--color-text-secondary, #F3F4F6);
+}
+
+/* --- Responsive Adjustments --- */
+@media (min-width: 768px) {
+  .header {
+    padding-top: calc(var(--spacing-section-gap, 3rem) * 1.5);
+  }
+
+  .color-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    margin-bottom: calc(var(--spacing-section-gap, 3rem) * 1.25);
+  }
+}
