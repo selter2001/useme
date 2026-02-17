@@ -8,7 +8,7 @@
     "ios-demo"
   ],
   "scripts": {
-    "dev:web": "cd web && npx http-server -p 8080"
+    "dev:web": "npx http-server . -p 8080 -o /web/"
   },
   "devDependencies": {
     "http-server": "^14.1.1"

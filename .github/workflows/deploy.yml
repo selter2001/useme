@@ -36,7 +36,7 @@ jobs:
 
       - name: Start HTTP server
         run: |
-          npx http-server web -p 8080 &
+          npx http-server . -p 8080 &
           sleep 3
 
       - name: Run accessibility tests
@@ -54,9 +54,13 @@ jobs:
 
       - name: Prepare deployment directory
         run: |
-          mkdir -p _site
-          cp -r web/* _site/
+          mkdir -p _site/web
+          cp -r web/* _site/web/
           cp -r shared _site/shared
+          cat > _site/index.html << 'REDIRECT'
+          <!DOCTYPE html>
+          <html><head><meta http-equiv="refresh" content="0;url=web/"></head></html>
+          REDIRECT
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
