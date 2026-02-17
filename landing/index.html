@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wojciech Olszak — Tworzenie Stron i Aplikacji iOS</title>
+  <meta name="description" content="Szybkie tworzenie stron internetowych i aplikacji iOS z wykorzystaniem AI. Profesjonalne usługi web developmentu.">
+
+  <link rel="stylesheet" href="../shared/styles/reset.css">
+  <link rel="stylesheet" href="../shared/styles/tokens.css">
+  <link rel="stylesheet" href="../shared/styles/utilities.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Przejdź do treści głównej</a>
+
+  <header class="site-header">
+    <nav class="container">
+      <a href="../web/" class="logo" aria-label="Strona główna portfolio">WO</a>
+      <ul class="nav-links">
+        <li><a href="#services">Usługi</a></li>
+        <li><a href="#testimonials">Opinie</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <a href="../web/" class="button-secondary button-small">Zobacz Portfolio</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="container">
+        <h1 id="hero-heading">Profesjonalne strony internetowe i aplikacje iOS</h1>
+        <p class="hero-subtitle">Szybkie, nowoczesne rozwiązania z wykorzystaniem AI. Od pomysłu do działającego produktu w dniach, nie tygodniach.</p>
+        <a href="#contact" class="button-primary button-large">Zamów bezpłatną wycenę</a>
+        <div class="trust-badges">
+          <span class="badge">AI-Powered</span>
+          <span class="badge">Mobile-First</span>
+          <span class="badge">Szybka realizacja</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services-section" aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">Usługi</h2>
+        <div class="services-grid">
+          <article class="service-card card">
+            <div class="service-icon">
+              <span aria-hidden="true">🖥</span>
+            </div>
+            <h3>Strony internetowe</h3>
+            <p>Responsywne strony wizytówkowe, landing page i portfolio. Nowoczesny design, szybkie ładowanie, optymalizacja SEO.</p>
+          </article>
+
+          <article class="service-card card">
+            <div class="service-icon">
+              <span aria-hidden="true">📱</span>
+            </div>
+            <h3>Aplikacje iOS</h3>
+            <p>Natywne aplikacje iPhone w SwiftUI. Intuicyjny interfejs, płynne animacje, lokalne przechowywanie danych.</p>
+          </article>
+
+          <article class="service-card card">
+            <div class="service-icon">
+              <span aria-hidden="true">⚡</span>
+            </div>
+            <h3>AI-Powered Development</h3>
+            <p>Wykorzystuję Claude Code jako AI-asystenta do szybszego dostarczania projektów bez kompromisów w jakości.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 id="testimonials-heading">Opinie klientów</h2>
+        <!-- MOCK DATA: Replace with real testimonials -->
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <blockquote>
+              <p>Wojciech dostarczył stronę w zaledwie kilka dni. Profesjonalny design i pełna responsywność. Polecam!</p>
+              <footer>
+                <cite>Anna Kowalska, Właścicielka sklepu online</cite>
+              </footer>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              <p>Aplikacja iOS dokładnie taka jak chciałem. Szybki kontakt i świetne zrozumienie wymagań.</p>
+              <footer>
+                <cite>Marek Nowak, Startup founder</cite>
+              </footer>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              <p>Landing page z formularzem kontaktowym zwiększyła liczbę zapytań o 40%. Bardzo dobra inwestycja.</p>
+              <footer>
+                <cite>Katarzyna Wiśniewska, Marketing Manager</cite>
+              </footer>
+            </blockquote>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Skontaktuj się</h2>
+        <p class="contact-intro">Opisz swój projekt, a odezwę się w ciągu 24 godzin z bezpłatną wyceną.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="user_name">Imię i nazwisko *</label>
+            <input
+              type="text"
+              id="user_name"
+              name="user_name"
+              required
+              aria-required="true"
+              aria-describedby="name-error"
+              placeholder="np. Jan Kowalski">
+            <span id="name-error" class="error-message" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="user_email">Adres email *</label>
+            <input
+              type="email"
+              id="user_email"
+              name="user_email"
+              required
+              aria-required="true"
+              aria-describedby="email-error"
+              placeholder="np. jan@firma.pl">
+            <span id="email-error" class="error-message" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Opis projektu *</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              data-minlength="10"
+              aria-required="true"
+              aria-describedby="message-error"
+              placeholder="Opisz czego potrzebujesz..."></textarea>
+            <span id="message-error" class="error-message" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="button-primary">
+            <span class="button-text">Wyślij wiadomość</span>
+            <span class="button-loading" style="display: none;">Wysyłanie...</span>
+          </button>
+
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Wojciech Olszak</p>
+      <nav class="footer-links">
+        <a href="../web/">Portfolio</a>
+        <a href="#">Useme</a>
+      </nav>
+      <p class="footer-credit">Zbudowane z Claude Code</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="./js/validation.js"></script>
+  <script src="./js/emailjs-form.js"></script>
+</body>
+</html>
