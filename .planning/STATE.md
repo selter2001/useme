@@ -11,16 +11,16 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 
 Phase: 3 of 5 (Habit Tracker)
 Plan: 3 of 3 in current phase — Phase complete
-Status: Ready for Phase 4
-Last activity: 2026-02-17 — Completed 03-03-PLAN.md (Web Demo)
+Status: Phase 3 Complete
+Last activity: 2026-02-17 — Completed 03-02-PLAN.md (Streak Tracking & Progress Charts)
 
 Progress: [███████░░░] 70%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
-- Average duration: 6 min
+- Total plans completed: 8
+- Average duration: 5 min
 - Total execution time: 0.7 hours
 
 **By Phase:**
@@ -29,11 +29,11 @@ Progress: [███████░░░] 70%
 |-------|-------|-------|----------|
 | 01-foundation-design-system | 2 | 18 min | 9 min |
 | 02-web-projects | 3 | 20 min | 7 min |
-| 03-habit-tracker | 2 | 5 min | 3 min |
+| 03-habit-tracker | 3 | 7 min | 2 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (3 min), 02-03 (15 min), 03-01 (1 min), 03-03 (4 min)
-- Trend: Consistent execution with web/CSS tasks averaging 4-7 minutes
+- Last 5 plans: 02-03 (15 min), 03-01 (1 min), 03-03 (4 min), 03-02 (2 min)
+- Trend: iOS plans executing extremely fast (1-4 min) due to clear architecture
 
 *Updated after each plan completion*
 
@@ -81,6 +81,13 @@ Recent decisions affecting current work:
 - @Relationship(deleteRule: .cascade) for automatic completion cleanup on habit deletion
 - Store colors as string keys, convert to SwiftUI Color via helper function
 
+**From Plan 03-02:**
+- Use Calendar.current.startOfDay(for:) for all date comparisons to prevent timezone-related streak bugs
+- Pure static functions in StreakCalculator - no state, all methods take completions array
+- Current streak only valid if most recent completion is today or yesterday
+- StreakBadge visual states: gray (zero), orange (active), yellow/gold (7+ day milestone)
+- Swift Charts BarMark for both weekly and monthly views with habit's accent color
+
 **From Plan 03-03:**
 - CSS iPhone mockup component with device frame, notch, and home indicator
 - Versioned localStorage schema with migration stub for future-proofing
@@ -100,5 +107,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-17 (phase 3 complete)
-Stopped at: Habit Tracker web demo complete, ready for Phase 4 (Budget Calculator)
-Resume file: .planning/phases/03-habit-tracker/03-03-SUMMARY.md
+Stopped at: Phase 3 complete (all 3 plans executed) - ready for Phase 4 (Budget Calculator)
+Resume file: .planning/phases/03-habit-tracker/03-02-SUMMARY.md
