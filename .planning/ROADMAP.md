@@ -15,8 +15,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Design System** - Monorepo structure, shared design tokens, GitHub Pages deployment
 - [x] **Phase 2: Web Projects** - Portfolio website + service landing page
 - [x] **Phase 3: Habit Tracker** - iOS app (SwiftUI) + web demo
-- [ ] **Phase 4: Expense Calculator** - iOS app (SwiftUI) + web demo
-- [ ] **Phase 5: Useme Integration** - Profile optimization, case studies, final polish
+- [x] **Phase 4: Expense Calculator** - iOS app (SwiftUI) + web demo
+- [x] **Phase 5: Useme Integration** - Profile optimization, case studies, final polish
 
 ## Phase Details
 
@@ -79,10 +79,10 @@ Plans:
   3. User views expense breakdown in visual chart (pie or bar)
   4. Expense data persists across app restarts (SwiftData)
   5. Web demo mimics iOS UI and provides functional expense tracking in browser
-**Plans**: TBD
+**Plans**: 1 plan (direct implementation based on Habit Tracker patterns)
 
 Plans:
-- [ ] 04-01: [To be planned]
+- [x] 04-01: Direct implementation — iOS app + web demo + portfolio link
 
 ### Phase 5: Useme Integration
 **Goal**: Optimize Useme profile and integrate all projects into cohesive portfolio presentation
@@ -94,10 +94,10 @@ Plans:
   3. Portfolio website links to all four completed project demos with screenshots
   4. User can follow documented presentation guide for showcasing projects on Useme
   5. All projects demonstrate consistent dark/tech branding and professional quality
-**Plans**: TBD
+**Plans**: 1/1
 
 Plans:
-- [ ] 05-01: [To be planned]
+- [x] 05-01: Final polish — GitHub repo, portfolio links, gradient thumbnails, Useme profile, docs
 
 ## Progress
 
@@ -109,9 +109,9 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Foundation & Design System | 2/2 | Complete | 2026-02-17 |
 | 2. Web Projects | 3/3 | Complete | 2026-02-17 |
 | 3. Habit Tracker | 3/3 | Complete | 2026-02-17 |
-| 4. Expense Calculator | 0/TBD | Not started | - |
-| 5. Useme Integration | 0/TBD | Not started | - |
+| 4. Expense Calculator | 1/1 | Complete | 2026-02-17 |
+| 5. Useme Integration | 1/1 | Complete | 2026-02-17 |
 
 ---
 *Roadmap created: 2026-02-17*
-*Last updated: 2026-02-17 — Phase 3 complete (Habit Tracker)*
+*Last updated: 2026-02-17 — Phase 5 complete (Useme Integration)*

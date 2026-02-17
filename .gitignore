@@ -2,3 +2,7 @@ node_modules/
 .DS_Store
 *.log
 .env
+xcuserdata/
+*.xcuserstate
+test-results/
+.planning/agent-history.json
