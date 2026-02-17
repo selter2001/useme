@@ -29,10 +29,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Dark mode color palette passes WCAG 4.5:1 contrast testing
   3. GitHub Actions workflow successfully deploys static content to GitHub Pages
   4. Monorepo structure supports parallel development of web and iOS projects
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: [To be planned]
+- [ ] 01-01-PLAN.md — Monorepo structure with npm workspaces and three-layer CSS design tokens
+- [ ] 01-02-PLAN.md — GitHub Actions deployment pipeline with WCAG accessibility gate
 
 ### Phase 2: Web Projects
 **Goal**: Complete portfolio website and service landing page as entry points for potential clients
@@ -101,7 +102,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Design System | 0/TBD | Not started | - |
+| 1. Foundation & Design System | 0/2 | Planned | - |
 | 2. Web Projects | 0/TBD | Not started | - |
 | 3. Habit Tracker | 0/TBD | Not started | - |
 | 4. Expense Calculator | 0/TBD | Not started | - |
@@ -109,4 +110,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 ---
 *Roadmap created: 2026-02-17*
-*Last updated: 2026-02-17*
+*Last updated: 2026-02-17 — Phase 1 planned (2 plans, 2 waves)*
