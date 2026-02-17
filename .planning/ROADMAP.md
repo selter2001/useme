@@ -62,10 +62,12 @@ Plans:
   3. User sees visual progress chart showing weekly/monthly completion
   4. Habit data persists across app restarts (SwiftData)
   5. Web demo mimics iOS UI and provides functional habit tracking in browser
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: [To be planned]
+- [ ] 03-01-PLAN.md — iOS Habit Tracker core: SwiftData models, habit CRUD, daily checkoff
+- [ ] 03-02-PLAN.md — iOS Habit Tracker features: streak calculator, Swift Charts detail view
+- [ ] 03-03-PLAN.md — Web demo with CSS iPhone mockup, Chart.js, and portfolio integration
 
 ### Phase 4: Expense Calculator
 **Goal**: Deliver complete Expense Calculator vertical slice (iOS app + web demo) demonstrating SwiftUI Charts
@@ -106,10 +108,10 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation & Design System | 2/2 | Complete | 2026-02-17 |
 | 2. Web Projects | 3/3 | Complete | 2026-02-17 |
-| 3. Habit Tracker | 0/TBD | Not started | - |
+| 3. Habit Tracker | 0/3 | Planned | - |
 | 4. Expense Calculator | 0/TBD | Not started | - |
 | 5. Useme Integration | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-02-17*
-*Last updated: 2026-02-17 — Phase 2 complete (3/3 plans, Web Projects)*
+*Last updated: 2026-02-17 — Phase 3 planned (3 plans, Habit Tracker)*
