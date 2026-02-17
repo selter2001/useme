@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio — Design System</title>
+  <meta name="description" content="Wojciech Olszak - iOS & Web Developer specjalizujący się w AI-Powered Development z Claude Code. Portfolio projektów iOS (SwiftUI) i web (HTML/CSS/JS).">
+  <title>Wojciech Olszak — iOS & Web Developer</title>
 
   <!-- Design System Stylesheets -->
   <link rel="stylesheet" href="../shared/styles/reset.css">
@@ -15,179 +16,201 @@
   <!-- Skip to content link for accessibility -->
   <a href="#main-content" class="sr-only">Przejdź do treści głównej</a>
 
-  <div class="container">
-    <!-- Header -->
-    <header class="header">
-      <h1>Design System Preview</h1>
-      <p class="caption">Three-layer token architecture demonstrating the complete design system</p>
-    </header>
+  <!-- Header/Navigation -->
+  <header class="site-nav" role="banner">
+    <div class="container">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo" aria-label="Strona główna">Wojciech Olszak</a>
 
-    <!-- Main Content -->
-    <main id="main-content">
+        <!-- Desktop Navigation -->
+        <nav aria-label="Nawigacja główna">
+          <ul class="nav-links">
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
 
-      <!-- Typography Section -->
-      <section class="section">
-        <h2>Typography</h2>
-        <div class="flex-col gap-md">
-          <div>
-            <h1>Heading 1 — Portfolio Title</h1>
-            <h2>Heading 2 — Section Header</h2>
-            <h3>Heading 3 — Subsection Header</h3>
-            <p class="body-text">
-              Body text uses the semantic token system for consistent typography.
-              This paragraph demonstrates how readable text appears with our dark/tech theme
-              and WCAG-compliant contrast ratios.
-            </p>
-            <p class="caption">
-              Caption text provides supplementary information in a smaller, muted style.
-            </p>
-          </div>
+        <!-- Mobile Menu Toggle -->
+        <button class="nav-toggle" aria-label="Otwórz menu nawigacji" aria-expanded="false" aria-controls="nav-mobile">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
 
-          <div>
-            <p class="body-text">
-              Inline code example: <code>const token = var(--color-interactive-primary)</code>
-            </p>
-            <pre><code>// Code block example
-const designSystem = {
-  layers: ['primitives', 'semantic', 'component'],
-  theme: 'dark/tech',
-  compliance: 'WCAG 2.1 AA'
-};</code></pre>
-          </div>
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-mobile" id="nav-mobile" role="navigation" aria-label="Menu mobilne">
+      <ul class="nav-mobile-links">
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#projects">Projekty</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <div class="hero-avatar" role="img" aria-label="Avatar Wojciecha Olszaka">
+          <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="60" fill="#262626"/>
+            <text x="60" y="75" font-size="48" font-weight="600" fill="#22C55E" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">WO</text>
+          </svg>
         </div>
-      </section>
-
-      <!-- Buttons Section -->
-      <section class="section">
-        <h2>Buttons</h2>
-        <div class="flex flex-wrap gap-md">
-          <button class="button-primary">Primary Button</button>
-          <button class="button-secondary">Secondary Button</button>
-          <a href="#" class="button-primary">Primary Link Button</a>
+        <h1 id="hero-heading">Wojciech Olszak</h1>
+        <p class="hero-subtitle">iOS & Web Developer | AI-Powered Development z Claude Code</p>
+        <div class="hero-cta">
+          <a href="#projects" class="button-primary">Zobacz projekty</a>
+          <a href="#contact" class="button-secondary">Kontakt</a>
         </div>
-        <p class="caption">Hover, focus, and active states demonstrate interactive feedback</p>
-      </section>
+      </div>
+    </section>
 
-      <!-- Cards Section -->
-      <section class="section">
-        <h2>Cards</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Card Component</h3>
-            <p class="body-text">
-              Cards use elevated background colors and subtle borders.
-              Hover effects provide interactive feedback.
-            </p>
-            <button class="button-primary">Learn More</button>
-          </div>
+    <!-- About Section -->
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">O mnie</h2>
+        <div class="about-content">
+          <p class="body-text">
+            Tworzę nowoczesne aplikacje iOS w SwiftUI oraz responsywne strony internetowe wykorzystując HTML, CSS i JavaScript.
+            Specjalizuję się w AI-powered development z Claude Code, co pozwala mi na szybkie dostarczanie wysokiej jakości kodu
+            i skrócenie czasu realizacji projektów. Każdy projekt podchodzę z dbałością o szczegóły, czysty kod i user experience.
+          </p>
 
-          <div class="card">
-            <h3>Second Card</h3>
-            <p class="body-text">
-              Grid layout automatically adjusts to screen size using auto-fit responsive columns.
-            </p>
-            <button class="button-secondary">View Details</button>
-          </div>
+          <h3>Technologie</h3>
+          <ul class="skills-grid">
+            <li class="skill-pill">SwiftUI</li>
+            <li class="skill-pill">HTML/CSS/JS</li>
+            <li class="skill-pill">Claude Code</li>
+            <li class="skill-pill">GitHub Pages</li>
+            <li class="skill-pill">Xcode</li>
+            <li class="skill-pill">Git</li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Color Palette Section -->
-      <section class="section">
-        <h2>Color Palette</h2>
-        <div class="color-section">
-          <h3>Backgrounds</h3>
-          <div class="color-grid">
-            <div class="color-swatch">
-              <div class="swatch bg-primary"></div>
-              <p class="caption">bg-primary<br>#0E0E0E</p>
-            </div>
-            <div class="color-swatch">
-              <div class="swatch bg-secondary"></div>
-              <p class="caption">bg-secondary<br>#1A1A1A</p>
-            </div>
-            <div class="color-swatch">
-              <div class="swatch bg-elevated"></div>
-              <p class="caption">bg-elevated<br>#262626</p>
-            </div>
-          </div>
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Projekty</h2>
 
-          <h3>Interactive Colors</h3>
-          <div class="color-grid">
-            <div class="color-swatch">
-              <div class="swatch interactive-primary"></div>
-              <p class="caption">Neon Green<br>#22C55E</p>
-            </div>
-            <div class="color-swatch">
-              <div class="swatch interactive-secondary"></div>
-              <p class="caption">Electric Blue<br>#3A82FF</p>
-            </div>
-          </div>
+        <div class="project-grid">
 
-          <h3>Text Colors</h3>
-          <div class="color-grid">
-            <div class="color-swatch">
-              <div class="swatch text-primary-swatch"></div>
-              <p class="caption">text-primary<br>#F9FAFB</p>
+          <!-- Project 1: Portfolio Website -->
+          <article class="project-card">
+            <div class="project-thumbnail" role="img" aria-label="Podgląd Portfolio Website">
+              <span class="thumbnail-text">Portfolio</span>
             </div>
-            <div class="color-swatch">
-              <div class="swatch text-secondary-swatch"></div>
-              <p class="caption">text-secondary<br>#F3F4F6</p>
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p class="project-description">Responsywna strona portfolio z dark/tech theme zbudowana na czystym HTML/CSS/JS.</p>
+              <ul class="tech-stack">
+                <li>HTML/CSS</li>
+                <li>JS</li>
+                <li>GitHub Pages</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="button-primary button-small">Demo</a>
+                <a href="#" class="button-secondary button-small">GitHub</a>
+              </div>
             </div>
-            <div class="color-swatch">
-              <div class="swatch text-muted-swatch"></div>
-              <p class="caption">text-muted<br>#E5E7EB</p>
+          </article>
+
+          <!-- Project 2: Landing Page -->
+          <article class="project-card">
+            <div class="project-thumbnail" role="img" aria-label="Podgląd Landing Page">
+              <span class="thumbnail-text">Landing</span>
             </div>
-          </div>
+            <div class="project-content">
+              <h3>Landing Page</h3>
+              <p class="project-description">Strona usługowa z formularzem kontaktowym EmailJS i responsywnym układem.</p>
+              <ul class="tech-stack">
+                <li>HTML/CSS</li>
+                <li>JS</li>
+                <li>EmailJS</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="button-primary button-small">Demo</a>
+                <a href="#" class="button-secondary button-small">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Habit Tracker -->
+          <article class="project-card">
+            <div class="project-thumbnail" role="img" aria-label="Podgląd Habit Tracker">
+              <span class="thumbnail-text">Habits</span>
+            </div>
+            <div class="project-content">
+              <h3>Habit Tracker</h3>
+              <p class="project-description">Aplikacja iOS do śledzenia nawyków z wykresami postępu i lokalnymi powiadomieniami.</p>
+              <ul class="tech-stack">
+                <li>SwiftUI</li>
+                <li>SwiftData</li>
+                <li>Charts</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="button-primary button-small">Demo</a>
+                <a href="#" class="button-secondary button-small">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Budget Calculator -->
+          <article class="project-card">
+            <div class="project-thumbnail" role="img" aria-label="Podgląd Kalkulator Wydatków">
+              <span class="thumbnail-text">Budget</span>
+            </div>
+            <div class="project-content">
+              <h3>Kalkulator Wydatków</h3>
+              <p class="project-description">Aplikacja iOS do zarządzania budżetem z kategoriami wydatków i statystykami.</p>
+              <ul class="tech-stack">
+                <li>SwiftUI</li>
+                <li>SwiftData</li>
+                <li>Charts</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="button-primary button-small">Demo</a>
+                <a href="#" class="button-secondary button-small">GitHub</a>
+              </div>
+            </div>
+          </article>
+
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Utilities Section -->
-      <section class="section">
-        <h2>Utility Classes</h2>
-
-        <h3>Container</h3>
-        <div class="card">
-          <p class="caption">This content is wrapped in a .container class with max-width 1200px and responsive padding</p>
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Kontakt</h2>
+        <p class="contact-text">
+          Zainteresowany współpracą? Skontaktuj się ze mną przez Useme lub bezpośrednio mailem.
+        </p>
+        <div class="contact-buttons">
+          <a href="#" class="button-primary" target="_blank" rel="noopener noreferrer">Profil na Useme</a>
+          <a href="mailto:placeholder@email.com" class="button-secondary">Wyślij email</a>
         </div>
+      </div>
+    </section>
 
-        <h3>Flexbox</h3>
-        <div class="card">
-          <div class="flex-between gap-md">
-            <div class="flex-1">Flex item 1</div>
-            <div class="flex-1">Flex item 2</div>
-            <div class="flex-1">Flex item 3</div>
-          </div>
-        </div>
+  </main>
 
-        <h3>Grid</h3>
-        <div class="grid-3">
-          <div class="card text-center">Grid Cell 1</div>
-          <div class="card text-center">Grid Cell 2</div>
-          <div class="card text-center">Grid Cell 3</div>
-        </div>
-      </section>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="caption">© 2026 Wojciech Olszak</p>
+      <p class="caption">Zbudowane z Claude Code</p>
+    </div>
+  </footer>
 
-      <!-- Accessibility Section -->
-      <section class="section">
-        <h2>Accessibility Features</h2>
-        <ul class="feature-list">
-          <li>WCAG 2.1 AA compliant contrast ratios (4.5:1 minimum)</li>
-          <li>Visible focus indicators on all interactive elements</li>
-          <li>Screen reader support with .sr-only utility class</li>
-          <li>Reduced motion support for animation preferences</li>
-          <li>Semantic HTML structure for assistive technologies</li>
-        </ul>
-      </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <p class="caption text-center">
-        Design System v1.0.0 — Three-layer token architecture
-      </p>
-    </footer>
-
-  </div>
+  <!-- JavaScript -->
+  <script src="./js/main.js"></script>
 </body>
 </html>
