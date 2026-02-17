@@ -465,6 +465,10 @@ body {
   border: 1px solid var(--color-border-default, #262626);
 }
 
+.chart-section canvas {
+  max-height: 250px;
+}
+
 .chart-section h3 {
   font-size: var(--font-size-lg, 1.125rem);
   color: var(--color-text-primary, #F9FAFB);
