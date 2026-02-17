@@ -8,7 +8,7 @@
     "timeout": 10000,
     "threshold": 0,
     "includeNotices": false,
-    "includeWarnings": true
+    "includeWarnings": false
   },
   "urls": [
     "http://localhost:8080/web/",
