@@ -9,6 +9,10 @@ struct HabitRow: View {
 
     @State private var isCompleted: Bool = false
 
+    private var currentStreak: Int {
+        StreakCalculator.calculateStreak(from: habit.completions).current
+    }
+
     var body: some View {
         HStack(spacing: 16) {
             // Icon
@@ -22,6 +26,11 @@ struct HabitRow: View {
                 .font(.body)
 
             Spacer()
+
+            // Streak badge (only show if streak > 0)
+            if currentStreak > 0 {
+                StreakBadge(streak: currentStreak, label: "")
+            }
 
             // Checkmark button
             Button {

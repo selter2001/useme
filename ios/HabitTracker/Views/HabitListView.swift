@@ -54,11 +54,9 @@ struct HabitListView: View {
     private var habitListView: some View {
         List {
             ForEach(habits) { habit in
-                HabitRow(habit: habit)
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-                        // NavigationLink to HabitDetailView will be wired in Plan 02
-                    }
+                NavigationLink(destination: HabitDetailView(habit: habit)) {
+                    HabitRow(habit: habit)
+                }
             }
             .onDelete(perform: deleteHabits)
         }
