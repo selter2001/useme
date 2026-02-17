@@ -54,8 +54,9 @@ jobs:
 
       - name: Prepare deployment directory
         run: |
-          mkdir -p _site/web
+          mkdir -p _site/web _site/landing
           cp -r web/* _site/web/
+          cp -r landing/* _site/landing/
           cp -r shared _site/shared
           cat > _site/index.html << 'REDIRECT'
           <!DOCTYPE html>

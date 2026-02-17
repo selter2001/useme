@@ -5,10 +5,12 @@
   "workspaces": [
     "shared/styles",
     "web",
+    "landing",
     "ios-demo"
   ],
   "scripts": {
-    "dev:web": "npx http-server . -p 8080 -o /web/"
+    "dev:web": "npx http-server . -p 8080 -o /web/",
+    "dev:landing": "npx http-server . -p 8080 -o /landing/"
   },
   "devDependencies": {
     "http-server": "^14.1.1"
