@@ -12,6 +12,7 @@
   },
   "urls": [
     "http://localhost:8080/web/",
-    "http://localhost:8080/landing/"
+    "http://localhost:8080/landing/",
+    "http://localhost:8080/web/habit-tracker/"
   ]
 }
