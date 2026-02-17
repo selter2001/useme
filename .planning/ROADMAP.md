@@ -45,10 +45,12 @@ Plans:
   3. Landing page contains functional contact form with EmailJS validation
   4. Both sites are fully responsive on mobile devices and load in under 2 seconds
   5. Both sites are deployed to GitHub Pages and accessible via public URLs
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: [To be planned]
+- [ ] 02-01-PLAN.md — Portfolio website with hero, project grid, contact section, and responsive navigation
+- [ ] 02-02-PLAN.md — Landing page with services, testimonials, and EmailJS contact form with validation
+- [ ] 02-03-PLAN.md — Deployment pipeline update and visual verification of both sites
 
 ### Phase 3: Habit Tracker
 **Goal**: Deliver complete Habit Tracker vertical slice (iOS app + web demo) demonstrating SwiftUI skills
@@ -103,11 +105,11 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Design System | 2/2 | Complete | 2026-02-17 |
-| 2. Web Projects | 0/TBD | Not started | - |
+| 2. Web Projects | 0/3 | In progress | - |
 | 3. Habit Tracker | 0/TBD | Not started | - |
 | 4. Expense Calculator | 0/TBD | Not started | - |
 | 5. Useme Integration | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-02-17*
-*Last updated: 2026-02-17 — Phase 1 complete (2 plans, Foundation & Design System)*
+*Last updated: 2026-02-17 — Phase 2 planned (3 plans, Web Projects)*
