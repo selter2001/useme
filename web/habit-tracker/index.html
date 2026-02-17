@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Habit Tracker — Web Demo. Aplikacja do śledzenia nawyków w przeglądarce.">
+  <title>Habit Tracker — Web Demo | Wojciech Olszak</title>
+
+  <!-- Design System Stylesheets -->
+  <link rel="stylesheet" href="../../shared/styles/reset.css">
+  <link rel="stylesheet" href="../../shared/styles/tokens.css">
+  <link rel="stylesheet" href="../../shared/styles/utilities.css">
+  <link rel="stylesheet" href="./css/ios-mockup.css">
+  <link rel="stylesheet" href="./css/habit-tracker.css">
+</head>
+<body>
+  <!-- Skip to content link for accessibility -->
+  <a href="#main-content" class="sr-only">Przejdź do treści głównej</a>
+
+  <main id="main-content">
+    <div class="page-layout">
+      <!-- Left/Top: Description -->
+      <div class="page-info">
+        <h1 class="page-title">Habit Tracker</h1>
+        <p class="page-subtitle">iOS App — Web Demo</p>
+        <p class="page-description">
+          Aplikacja do śledzenia nawyków z wykresami postępu i licznikiem serii.
+          Ta wersja webowa symuluje doświadczenie natywnej aplikacji iOS.
+        </p>
+        <a href="../" class="back-link">← Powrót do portfolio</a>
+      </div>
+
+      <!-- Right/Center: iPhone Mockup -->
+      <div class="mockup-container">
+        <div class="iphone-mockup">
+          <div class="iphone-notch"></div>
+          <div class="iphone-screen" id="app-screen">
+            <!-- App Content -->
+            <div class="app-header">
+              <h2 class="app-title">My Habits</h2>
+              <button class="app-add-btn" id="add-habit-btn" aria-label="Dodaj nawyk">+</button>
+            </div>
+            <div class="habit-list" id="habit-list">
+              <!-- Habits rendered by JS -->
+            </div>
+            <div class="empty-state" id="empty-state">
+              <p>Tap + to add your first habit</p>
+            </div>
+
+            <!-- Detail View (overlays habit list) -->
+            <div class="detail-view" id="detail-view" hidden>
+              <button class="detail-back" id="detail-back" aria-label="Powrót">← Back</button>
+              <div class="detail-header" id="detail-header"></div>
+              <div class="detail-streaks" id="detail-streaks"></div>
+              <div class="detail-chart">
+                <canvas id="detailChart" width="300" height="150"></canvas>
+              </div>
+              <button class="detail-delete" id="detail-delete">Usuń nawyk</button>
+            </div>
+          </div>
+          <div class="iphone-home-indicator"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart Section (below mockup) -->
+    <div class="chart-section" id="chart-section">
+      <h3>Weekly Progress</h3>
+      <canvas id="weeklyChart" width="400" height="200"></canvas>
+    </div>
+  </main>
+
+  <!-- Add Habit Modal -->
+  <div class="modal-overlay" id="add-modal" hidden>
+    <div class="modal-content">
+      <h2>New Habit</h2>
+      <input type="text" id="habit-name-input" placeholder="Nazwa nawyku" maxlength="30" aria-label="Nazwa nawyku">
+      <div class="icon-picker" id="icon-picker" role="radiogroup" aria-label="Wybierz ikonę">
+        <!-- Icons rendered by JS -->
+      </div>
+      <div class="color-picker" id="color-picker" role="radiogroup" aria-label="Wybierz kolor">
+        <!-- Colors rendered by JS -->
+      </div>
+      <div class="modal-actions">
+        <button class="modal-cancel" id="modal-cancel">Anuluj</button>
+        <button class="modal-save" id="modal-save" disabled>Zapisz</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="./js/streak-calculator.js"></script>
+  <script src="./js/chart-renderer.js"></script>
+  <script src="./js/habit-tracker.js"></script>
+</body>
+</html>
