@@ -30,12 +30,16 @@ const HabitTracker = {
    */
   Storage: {
     save(habits) {
-      const data = {
-        version: 1,
-        habits: habits,
-        lastUpdated: new Date().toISOString()
-      };
-      localStorage.setItem('habitTrackerData', JSON.stringify(data));
+      try {
+        const data = {
+          version: 1,
+          habits: habits,
+          lastUpdated: new Date().toISOString()
+        };
+        localStorage.setItem('habitTrackerData', JSON.stringify(data));
+      } catch (e) {
+        console.warn('localStorage unavailable:', e);
+      }
     },
 
     load() {
@@ -71,12 +75,16 @@ const HabitTracker = {
       this.seedDemoData();
     }
 
-    // Render UI
-    this.renderHabitList();
-    this.renderWeeklyChart();
-
-    // Bind event listeners
+    // Bind event listeners first so UI is always interactive
     this.bindEvents();
+
+    // Render UI (chart may fail if Chart.js CDN blocked)
+    this.renderHabitList();
+    try {
+      this.renderWeeklyChart();
+    } catch (e) {
+      console.warn('Chart render failed:', e);
+    }
   },
 
   /**
@@ -159,11 +167,9 @@ const HabitTracker = {
       this.saveNewHabit();
     });
 
-    // Habit name input (enable save when valid)
-    document.getElementById('habit-name-input').addEventListener('input', (e) => {
-      const saveBtn = document.getElementById('modal-save');
-      const isValid = e.target.value.trim().length > 0 && this.selectedIcon && this.selectedColor;
-      saveBtn.disabled = !isValid;
+    // Habit name input — revalidate on every keystroke
+    document.getElementById('habit-name-input').addEventListener('input', () => {
+      this.validateModalForm();
     });
 
     // Detail view back button
@@ -220,6 +226,7 @@ const HabitTracker = {
 
       // Check button
       const checkBtn = document.createElement('button');
+      checkBtn.type = 'button';
       checkBtn.className = 'habit-check';
       checkBtn.setAttribute('aria-label', 'Toggle completion');
 
@@ -327,13 +334,13 @@ const HabitTracker = {
 
     this.availableIcons.forEach(icon => {
       const iconBtn = document.createElement('button');
+      iconBtn.type = 'button';
       iconBtn.className = 'icon-choice';
       iconBtn.textContent = icon;
       iconBtn.setAttribute('role', 'radio');
       iconBtn.setAttribute('aria-checked', 'false');
 
-      iconBtn.addEventListener('click', (e) => {
-        e.preventDefault();
+      iconBtn.addEventListener('click', () => {
         this.selectIcon(icon);
       });
 
@@ -369,14 +376,14 @@ const HabitTracker = {
 
     this.availableColors.forEach(color => {
       const colorBtn = document.createElement('button');
+      colorBtn.type = 'button';
       colorBtn.className = 'color-choice';
       colorBtn.style.backgroundColor = color.hex;
       colorBtn.setAttribute('role', 'radio');
       colorBtn.setAttribute('aria-checked', 'false');
       colorBtn.setAttribute('aria-label', color.name);
 
-      colorBtn.addEventListener('click', (e) => {
-        e.preventDefault();
+      colorBtn.addEventListener('click', () => {
         this.selectColor(color.name);
       });
 
