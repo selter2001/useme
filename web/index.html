@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Wojciech Olszak — iOS & Web Developer. Portfolio projektów iOS (SwiftUI) i stron internetowych (HTML/CSS/JS).">
+  <meta name="description" content="Wojciech Olszak — iOS & Web Developer. Portfolio of iOS projects (SwiftUI) and responsive websites (HTML/CSS/JS).">
   <title>Wojciech Olszak — iOS & Web Developer</title>
 
   <!-- Design System Stylesheets -->
@@ -14,25 +14,25 @@
 </head>
 <body>
   <!-- Skip to content link for accessibility -->
-  <a href="#main-content" class="sr-only">Przejdź do treści głównej</a>
+  <a href="#main-content" class="sr-only">Skip to main content</a>
 
   <!-- Header/Navigation -->
   <header class="site-nav" role="banner">
     <div class="container">
       <div class="nav-container">
-        <a href="#hero" class="nav-logo" aria-label="Strona główna">Wojciech Olszak</a>
+        <a href="#hero" class="nav-logo" aria-label="Homepage">Wojciech Olszak</a>
 
         <!-- Desktop Navigation -->
-        <nav aria-label="Nawigacja główna">
+        <nav aria-label="Main navigation">
           <ul class="nav-links">
-            <li><a href="#about">O mnie</a></li>
-            <li><a href="#projects">Projekty</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 
         <!-- Mobile Menu Toggle -->
-        <button class="nav-toggle" aria-label="Otwórz menu nawigacji" aria-expanded="false" aria-controls="nav-mobile">
+        <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-mobile">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -41,11 +41,11 @@
     </div>
 
     <!-- Mobile Navigation Overlay -->
-    <div class="nav-mobile" id="nav-mobile" role="navigation" aria-label="Menu mobilne">
+    <div class="nav-mobile" id="nav-mobile" role="navigation" aria-label="Mobile menu">
       <ul class="nav-mobile-links">
-        <li><a href="#about">O mnie</a></li>
-        <li><a href="#projects">Projekty</a></li>
-        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </header>
@@ -58,10 +58,10 @@
       <div class="hero-content">
         <img src="./assets/images/avatar.jpg" alt="Wojciech Olszak — iOS & Web Developer" width="150" height="150" class="hero-avatar">
         <h1 id="hero-heading">Wojciech Olszak</h1>
-        <p class="hero-subtitle">iOS & Web Developer | Szybkie dostarczanie nowoczesnych rozwiązań</p>
+        <p class="hero-subtitle">iOS & Web Developer | Fast delivery of modern solutions</p>
         <div class="hero-cta">
-          <a href="#projects" class="button-primary">Zobacz projekty</a>
-          <a href="#contact" class="button-secondary">Kontakt</a>
+          <a href="#projects" class="button-primary">View Projects</a>
+          <a href="#contact" class="button-secondary">Contact</a>
         </div>
       </div>
     </section>
@@ -69,15 +69,15 @@
     <!-- About Section -->
     <section class="about-section" id="about" aria-labelledby="about-heading">
       <div class="container">
-        <h2 id="about-heading">O mnie</h2>
+        <h2 id="about-heading">About Me</h2>
         <div class="about-content">
           <p class="body-text">
-            Tworzę natywne aplikacje iOS w SwiftUI oraz responsywne strony internetowe w HTML, CSS i JavaScript.
-            Stawiam na szybkie dostarczanie wysokiej jakości kodu i sprawną realizację projektów.
-            Każdy projekt podchodzę z dbałością o szczegóły, czysty kod i user experience.
+            I build native iOS apps with SwiftUI and responsive websites with HTML, CSS, and JavaScript.
+            I focus on delivering high-quality code quickly and executing projects efficiently.
+            Every project is approached with attention to detail, clean code, and great user experience.
           </p>
 
-          <h3>Technologie</h3>
+          <h3>Technologies</h3>
           <ul class="skills-grid">
             <li class="skill-pill">SwiftUI</li>
             <li class="skill-pill">HTML/CSS/JS</li>
@@ -93,18 +93,18 @@
     <!-- Projects Section -->
     <section class="projects-section" id="projects" aria-labelledby="projects-heading">
       <div class="container">
-        <h2 id="projects-heading">Projekty</h2>
+        <h2 id="projects-heading">Projects</h2>
 
         <div class="project-grid">
 
           <!-- Project 1: Portfolio Website -->
           <article class="project-card">
-            <div class="project-thumbnail thumbnail-portfolio" role="img" aria-label="Podgląd Portfolio Website">
+            <div class="project-thumbnail thumbnail-portfolio" role="img" aria-label="Portfolio Website preview">
               <span class="thumbnail-icon">&lt;/&gt;</span>
             </div>
             <div class="project-content">
               <h3>Portfolio Website</h3>
-              <p class="project-description">Responsywna strona portfolio z dark/tech theme zbudowana na czystym HTML/CSS/JS.</p>
+              <p class="project-description">Responsive portfolio site with dark/tech theme built on vanilla HTML/CSS/JS.</p>
               <ul class="tech-stack">
                 <li>HTML/CSS</li>
                 <li>JS</li>
@@ -119,12 +119,12 @@
 
           <!-- Project 2: Landing Page -->
           <article class="project-card">
-            <div class="project-thumbnail thumbnail-landing" role="img" aria-label="Podgląd Landing Page">
+            <div class="project-thumbnail thumbnail-landing" role="img" aria-label="Landing Page preview">
               <span class="thumbnail-icon">&nearr;</span>
             </div>
             <div class="project-content">
               <h3>Landing Page</h3>
-              <p class="project-description">Strona usługowa z sekcją kontaktową i responsywnym układem.</p>
+              <p class="project-description">Service page with contact section and responsive layout.</p>
               <ul class="tech-stack">
                 <li>HTML/CSS</li>
                 <li>JS</li>
@@ -138,12 +138,12 @@
 
           <!-- Project 3: Habit Tracker -->
           <article class="project-card">
-            <div class="project-thumbnail thumbnail-habits" role="img" aria-label="Podgląd Habit Tracker">
+            <div class="project-thumbnail thumbnail-habits" role="img" aria-label="Habit Tracker preview">
               <span class="thumbnail-icon">&check;</span>
             </div>
             <div class="project-content">
               <h3>Habit Tracker</h3>
-              <p class="project-description">Aplikacja iOS do śledzenia nawyków z wykresami postępu i lokalnymi powiadomieniami.</p>
+              <p class="project-description">iOS app for tracking daily habits with progress charts and local notifications.</p>
               <ul class="tech-stack">
                 <li>SwiftUI</li>
                 <li>SwiftData</li>
@@ -156,14 +156,14 @@
             </div>
           </article>
 
-          <!-- Project 4: Budget Calculator -->
+          <!-- Project 4: Expense Calculator -->
           <article class="project-card">
-            <div class="project-thumbnail thumbnail-budget" role="img" aria-label="Podgląd Kalkulator Wydatków">
+            <div class="project-thumbnail thumbnail-budget" role="img" aria-label="Expense Calculator preview">
               <span class="thumbnail-icon">$</span>
             </div>
             <div class="project-content">
-              <h3>Kalkulator Wydatków</h3>
-              <p class="project-description">Aplikacja iOS do zarządzania budżetem z kategoriami wydatków i statystykami.</p>
+              <h3>Expense Calculator</h3>
+              <p class="project-description">iOS app for budget management with expense categories and statistics.</p>
               <ul class="tech-stack">
                 <li>SwiftUI</li>
                 <li>SwiftData</li>
@@ -183,13 +183,13 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact" aria-labelledby="contact-heading">
       <div class="container">
-        <h2 id="contact-heading">Kontakt</h2>
+        <h2 id="contact-heading">Contact</h2>
         <p class="contact-text">
-          Zainteresowany współpracą? Skontaktuj się ze mną przez Useme lub bezpośrednio mailem.
+          Interested in working together? Reach out via Useme or send me an email directly.
         </p>
         <div class="contact-buttons">
-          <a href="https://useme.com/pl/roles/contractor/wojciech-olszak,609067/" class="button-primary" target="_blank" rel="noopener noreferrer">Profil na Useme</a>
-          <a href="mailto:wojtekolszak12@gmail.com" class="button-secondary">Wyślij email</a>
+          <a href="https://useme.com/pl/roles/contractor/wojciech-olszak,609067/" class="button-primary" target="_blank" rel="noopener noreferrer">Useme Profile</a>
+          <a href="mailto:wojtekolszak12@gmail.com" class="button-secondary">Send Email</a>
         </div>
       </div>
     </section>
@@ -199,7 +199,7 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <p class="caption">© 2026 Wojciech Olszak</p>
+      <p class="caption">&copy; 2026 Wojciech Olszak</p>
     </div>
   </footer>
 

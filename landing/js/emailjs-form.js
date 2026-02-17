@@ -27,7 +27,7 @@
 
       // Validate all fields before submission
       if (!window.FormValidation.validateAllFields(form)) {
-        statusDiv.textContent = 'Popraw błędy w formularzu';
+        statusDiv.textContent = 'Please fix the errors in the form';
         statusDiv.className = 'form-status error';
         return;
       }
@@ -47,7 +47,7 @@
       emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form)
         .then(function(response) {
           // Success
-          statusDiv.textContent = 'Wiadomość wysłana! Odezwę się w ciągu 24 godzin.';
+          statusDiv.textContent = 'Message sent! I\'ll get back to you within 24 hours.';
           statusDiv.className = 'form-status success';
           form.reset();
 
@@ -73,7 +73,7 @@
         .catch(function(error) {
           // Error
           console.error('EmailJS Error:', error);
-          statusDiv.textContent = 'Nie udało się wysłać wiadomości. Spróbuj ponownie lub napisz bezpośrednio na email.';
+          statusDiv.textContent = 'Failed to send the message. Please try again or email me directly.';
           statusDiv.className = 'form-status error';
 
           // Reset button state

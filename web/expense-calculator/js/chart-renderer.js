@@ -51,7 +51,7 @@ const ExpenseChartRenderer = {
             displayColors: false,
             callbacks: {
               label: function(context) {
-                return context.parsed.y.toFixed(2) + ' zł';
+                return '$' + context.parsed.y.toFixed(2);
               }
             }
           }
@@ -62,7 +62,7 @@ const ExpenseChartRenderer = {
             ticks: {
               color: '#9CA3AF',
               callback: function(value) {
-                return value + ' zł';
+                return '$' + value;
               }
             },
             grid: {
@@ -139,7 +139,7 @@ const ExpenseChartRenderer = {
               label: function(context) {
                 const total = context.dataset.data.reduce((a, b) => a + b, 0);
                 const percentage = ((context.parsed / total) * 100).toFixed(1);
-                return context.parsed.toFixed(2) + ' zł (' + percentage + '%)';
+                return '$' + context.parsed.toFixed(2) + ' (' + percentage + '%)';
               }
             }
           }

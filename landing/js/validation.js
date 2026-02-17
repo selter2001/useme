@@ -8,15 +8,15 @@
   const validation = {
     email: {
       pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-      message: 'Podaj poprawny adres email (np. jan@firma.pl)'
+      message: 'Please enter a valid email address (e.g. john@company.com)'
     },
     required: {
       test: (value) => value.trim().length > 0,
-      message: 'To pole jest wymagane'
+      message: 'This field is required'
     },
     minLength: (min) => ({
       test: (value) => value.trim().length >= min,
-      message: `Wpisz co najmniej ${min} znaków`
+      message: `Please enter at least ${min} characters`
     })
   };
 

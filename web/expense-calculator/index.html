@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Expense Calculator — Web Demo. Aplikacja do zarządzania wydatkami w przeglądarce.">
+  <meta name="description" content="Expense Calculator — Web Demo. Browser-based expense management application.">
   <title>Expense Calculator — Web Demo | Wojciech Olszak</title>
 
   <!-- Design System Stylesheets -->
@@ -15,19 +15,19 @@
 </head>
 <body>
   <!-- Skip to content link for accessibility -->
-  <a href="#main-content" class="sr-only">Przejdź do treści głównej</a>
+  <a href="#main-content" class="sr-only">Skip to main content</a>
 
   <main id="main-content">
     <div class="page-layout">
       <!-- Left/Top: Description -->
       <div class="page-info">
-        <h1 class="page-title">Kalkulator Wydatków</h1>
+        <h1 class="page-title">Expense Calculator</h1>
         <p class="page-subtitle">iOS App — Web Demo</p>
         <p class="page-description">
-          Aplikacja do zarządzania budżetem z kategoriami wydatków i statystykami.
-          Ta wersja webowa symuluje doświadczenie natywnej aplikacji iOS.
+          Budget management app with expense categories and statistics.
+          This web version simulates the native iOS app experience.
         </p>
-        <a href="../" class="back-link">← Powrót do portfolio</a>
+        <a href="../" class="back-link">&larr; Back to portfolio</a>
       </div>
 
       <!-- Right/Center: iPhone Mockup -->
@@ -41,15 +41,15 @@
                 <h2 class="app-title">My Expenses</h2>
               </div>
               <div class="app-header-right">
-                <button class="app-summary-btn" id="summary-btn" aria-label="Podsumowanie">📊</button>
-                <button class="app-add-btn" id="add-expense-btn" aria-label="Dodaj wydatek">+</button>
+                <button class="app-summary-btn" id="summary-btn" aria-label="Summary">📊</button>
+                <button class="app-add-btn" id="add-expense-btn" aria-label="Add expense">+</button>
               </div>
             </div>
 
             <!-- Monthly Total Banner -->
             <div class="monthly-total" id="monthly-total">
               <span class="monthly-total-label">This Month</span>
-              <span class="monthly-total-value" id="monthly-total-value">0.00 zł</span>
+              <span class="monthly-total-value" id="monthly-total-value">$0.00</span>
             </div>
 
             <div class="expense-list" id="expense-list">
@@ -61,10 +61,10 @@
 
             <!-- Summary View (overlays expense list) -->
             <div class="summary-view" id="summary-view" hidden>
-              <button class="detail-back" id="summary-back" aria-label="Powrót">← Back</button>
+              <button class="detail-back" id="summary-back" aria-label="Back">&larr; Back</button>
               <div class="summary-header">
                 <h3 class="summary-title">Monthly Summary</h3>
-                <div class="summary-total" id="summary-total">0.00 zł</div>
+                <div class="summary-total" id="summary-total">$0.00</div>
               </div>
               <div class="summary-chart">
                 <canvas id="categoryChart" width="280" height="280"></canvas>
@@ -93,18 +93,18 @@
   <div class="modal-overlay" id="add-modal" hidden>
     <div class="modal-content">
       <h2>New Expense</h2>
-      <input type="number" id="expense-amount-input" placeholder="Amount (zł)" step="0.01" min="0" aria-label="Kwota wydatku">
-      <input type="text" id="expense-desc-input" placeholder="Description" maxlength="50" aria-label="Opis wydatku">
-      <div class="category-picker" id="category-picker" role="radiogroup" aria-label="Wybierz kategorię">
+      <input type="number" id="expense-amount-input" placeholder="Amount ($)" step="0.01" min="0" aria-label="Expense amount">
+      <input type="text" id="expense-desc-input" placeholder="Description" maxlength="50" aria-label="Expense description">
+      <div class="category-picker" id="category-picker" role="radiogroup" aria-label="Choose category">
         <!-- Categories rendered by JS -->
       </div>
       <div class="date-input-wrapper">
         <label for="expense-date-input" class="date-label">Date</label>
-        <input type="date" id="expense-date-input" aria-label="Data wydatku">
+        <input type="date" id="expense-date-input" aria-label="Expense date">
       </div>
       <div class="modal-actions">
-        <button class="modal-cancel" id="modal-cancel">Anuluj</button>
-        <button class="modal-save" id="modal-save" disabled>Zapisz</button>
+        <button class="modal-cancel" id="modal-cancel">Cancel</button>
+        <button class="modal-save" id="modal-save" disabled>Save</button>
       </div>
     </div>
   </div>

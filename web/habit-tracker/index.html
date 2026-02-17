@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Habit Tracker — Web Demo. Aplikacja do śledzenia nawyków w przeglądarce.">
+  <meta name="description" content="Habit Tracker — Web Demo. Browser-based habit tracking application.">
   <title>Habit Tracker — Web Demo | Wojciech Olszak</title>
 
   <!-- Design System Stylesheets -->
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!-- Skip to content link for accessibility -->
-  <a href="#main-content" class="sr-only">Przejdź do treści głównej</a>
+  <a href="#main-content" class="sr-only">Skip to main content</a>
 
   <main id="main-content">
     <div class="page-layout">
@@ -24,10 +24,10 @@
         <h1 class="page-title">Habit Tracker</h1>
         <p class="page-subtitle">iOS App — Web Demo</p>
         <p class="page-description">
-          Aplikacja do śledzenia nawyków z wykresami postępu i licznikiem serii.
-          Ta wersja webowa symuluje doświadczenie natywnej aplikacji iOS.
+          Habit tracking app with progress charts and streak counter.
+          This web version simulates the native iOS app experience.
         </p>
-        <a href="../" class="back-link">← Powrót do portfolio</a>
+        <a href="../" class="back-link">&larr; Back to portfolio</a>
       </div>
 
       <!-- Right/Center: iPhone Mockup -->
@@ -38,7 +38,7 @@
             <!-- App Content -->
             <div class="app-header">
               <h2 class="app-title">My Habits</h2>
-              <button class="app-add-btn" id="add-habit-btn" aria-label="Dodaj nawyk">+</button>
+              <button class="app-add-btn" id="add-habit-btn" aria-label="Add habit">+</button>
             </div>
             <div class="habit-list" id="habit-list">
               <!-- Habits rendered by JS -->
@@ -49,13 +49,13 @@
 
             <!-- Detail View (overlays habit list) -->
             <div class="detail-view" id="detail-view" hidden>
-              <button class="detail-back" id="detail-back" aria-label="Back">← Back</button>
+              <button class="detail-back" id="detail-back" aria-label="Back">&larr; Back</button>
               <div class="detail-header" id="detail-header"></div>
               <div class="detail-streaks" id="detail-streaks"></div>
               <div class="detail-chart">
                 <canvas id="detailChart" width="300" height="150"></canvas>
               </div>
-              <button class="detail-delete" id="detail-delete">Usuń nawyk</button>
+              <button class="detail-delete" id="detail-delete">Delete Habit</button>
             </div>
           </div>
           <div class="iphone-home-indicator"></div>
@@ -74,16 +74,16 @@
   <div class="modal-overlay" id="add-modal" hidden>
     <div class="modal-content">
       <h2>New Habit</h2>
-      <input type="text" id="habit-name-input" placeholder="Nazwa nawyku" maxlength="30" aria-label="Nazwa nawyku">
-      <div class="icon-picker" id="icon-picker" role="radiogroup" aria-label="Wybierz ikonę">
+      <input type="text" id="habit-name-input" placeholder="Habit name" maxlength="30" aria-label="Habit name">
+      <div class="icon-picker" id="icon-picker" role="radiogroup" aria-label="Choose icon">
         <!-- Icons rendered by JS -->
       </div>
-      <div class="color-picker" id="color-picker" role="radiogroup" aria-label="Wybierz kolor">
+      <div class="color-picker" id="color-picker" role="radiogroup" aria-label="Choose color">
         <!-- Colors rendered by JS -->
       </div>
       <div class="modal-actions">
-        <button class="modal-cancel" id="modal-cancel">Anuluj</button>
-        <button class="modal-save" id="modal-save" disabled>Zapisz</button>
+        <button class="modal-cancel" id="modal-cancel">Cancel</button>
+        <button class="modal-save" id="modal-save" disabled>Save</button>
       </div>
     </div>
   </div>

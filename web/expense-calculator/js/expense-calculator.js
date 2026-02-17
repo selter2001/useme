@@ -182,7 +182,7 @@ const ExpenseCalculator = {
 
       const dateSpan = document.createElement('span');
       const dateObj = new Date(expense.date);
-      dateSpan.textContent = dateObj.toLocaleDateString('pl-PL', { day: 'numeric', month: 'short' });
+      dateSpan.textContent = dateObj.toLocaleDateString('en-US', { day: 'numeric', month: 'short' });
 
       metaDiv.appendChild(badge);
       metaDiv.appendChild(dateSpan);
@@ -193,7 +193,7 @@ const ExpenseCalculator = {
       // Amount
       const amountDiv = document.createElement('div');
       amountDiv.className = `expense-amount text-${cat.colorName}`;
-      amountDiv.textContent = expense.amount.toFixed(2) + ' zł';
+      amountDiv.textContent = '$' + expense.amount.toFixed(2);
 
       // Delete on click
       item.addEventListener('click', () => {
@@ -213,7 +213,7 @@ const ExpenseCalculator = {
    */
   updateMonthlyTotal() {
     const total = ExpenseSummary.calculateMonthlyTotal(this.expenses);
-    document.getElementById('monthly-total-value').textContent = total.toFixed(2) + ' zł';
+    document.getElementById('monthly-total-value').textContent = '$' + total.toFixed(2);
   },
 
   /**
@@ -367,7 +367,7 @@ const ExpenseCalculator = {
 
     // Update total
     const total = ExpenseSummary.calculateMonthlyTotal(this.expenses);
-    document.getElementById('summary-total').textContent = total.toFixed(2) + ' zł';
+    document.getElementById('summary-total').textContent = '$' + total.toFixed(2);
 
     // Render category chart
     const breakdown = ExpenseSummary.getCategoryBreakdown(this.expenses);
@@ -384,7 +384,7 @@ const ExpenseCalculator = {
       row.innerHTML = `
         <span class="breakdown-icon">${item.icon}</span>
         <span class="breakdown-name">${item.displayName}</span>
-        <span class="breakdown-amount text-${item.colorName}">${item.total.toFixed(2)} zł</span>
+        <span class="breakdown-amount text-${item.colorName}">$${item.total.toFixed(2)}</span>
       `;
 
       breakdownContainer.appendChild(row);
@@ -403,7 +403,7 @@ const ExpenseCalculator = {
       </div>
       <div class="stat-row">
         <span class="stat-label">Daily Average</span>
-        <span class="stat-value">${avg.toFixed(2)} zł</span>
+        <span class="stat-value">$${avg.toFixed(2)}</span>
       </div>
       <div class="stat-row">
         <span class="stat-label">Top Category</span>

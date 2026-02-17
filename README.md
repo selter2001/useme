@@ -11,100 +11,6 @@
 
 ---
 
-<details open>
-<summary><strong>PL — Polski</strong></summary>
-
-## O projekcie
-
-Portfolio freelancera prezentujace 4 kompletne projekty demo — od natywnych aplikacji iOS po responsywne strony internetowe. Kazdy projekt jest dzialajacym produktem z kodem zrodlowym, nie mockupem.
-
-Zbudowane z wykorzystaniem **Claude Code** (AI-assisted development), co pozwolilo na dostarczenie calego portfolio w rekordowym tempie bez kompromisow w jakosci kodu.
-
-## Projekty
-
-### 1. Portfolio Website
-> Responsywna strona portfolio z dark/tech theme
-
-- Sticky nawigacja z hamburger menu na mobile
-- Sekcje: hero, o mnie, projekty, kontakt
-- Pelna responsywnosc, WCAG accessible
-- **Stack:** HTML, CSS, JavaScript
-
-### 2. Landing Page
-> Strona uslugowa z sekcja kontaktowa
-
-- Sekcje uslug z ikonami
-- Bezposrednie linki kontaktowe (Useme + email)
-- Responsywny layout z dark theme
-- **Stack:** HTML, CSS, JavaScript
-
-### 3. Habit Tracker
-> Aplikacja iOS + web demo do sledzenia nawykow
-
-- Tworzenie, edycja i usuwanie nawykow
-- Codzienne odhaczanie z licznikiem streak
-- Wykresy postepu (Swift Charts / Chart.js)
-- Persistencja danych (SwiftData / localStorage)
-- **Stack iOS:** SwiftUI, SwiftData, Swift Charts
-- **Stack Web:** HTML, CSS, JavaScript, Chart.js
-
-### 4. Kalkulator Wydatkow
-> Aplikacja iOS + web demo do zarzadzania budzetem
-
-- Dodawanie wydatkow z kategoriami
-- Podsumowanie miesieczne z wykresami
-- Statystyki wydatkow per kategoria
-- Persistencja danych (SwiftData / localStorage)
-- **Stack iOS:** SwiftUI, SwiftData, Swift Charts
-- **Stack Web:** HTML, CSS, JavaScript, Chart.js
-
-## Struktura repozytorium
-
-```
-useme/
-├── web/                    # Portfolio + web demo aplikacji iOS
-│   ├── index.html          # Strona glowna portfolio
-│   ├── css/main.css        # Style portfolio
-│   ├── habit-tracker/      # Web demo — Habit Tracker
-│   └── expense-calculator/ # Web demo — Kalkulator Wydatkow
-├── landing/                # Landing page z sekcja kontaktowa
-├── ios/                    # Natywne aplikacje iOS
-│   ├── HabitTracker/       # Habit Tracker — SwiftUI
-│   └── ExpenseCalculator/  # Kalkulator Wydatkow — SwiftUI
-└── shared/                 # Wspoldzielony design system
-    └── styles/             # CSS tokens, reset, utilities
-```
-
-## Uruchomienie lokalne
-
-```bash
-# Klonowanie
-git clone https://github.com/selter2001/useme.git
-cd useme
-
-# Serwer deweloperski
-npx http-server . -p 3000
-
-# Portfolio:           http://localhost:3000/web/
-# Landing page:        http://localhost:3000/landing/
-# Habit Tracker demo:  http://localhost:3000/web/habit-tracker/
-# Expense Calculator:  http://localhost:3000/web/expense-calculator/
-```
-
-Projekty iOS wymagaja Xcode 15+ i iOS 17+ Simulator:
-```bash
-cd ios
-xcodegen generate
-open UsemeApps.xcodeproj
-```
-
-</details>
-
----
-
-<details>
-<summary><strong>EN — English</strong></summary>
-
 ## About
 
 Freelancer portfolio showcasing 4 complete demo projects — from native iOS apps to responsive websites. Every project is a working product with source code, not a mockup.
@@ -188,8 +94,6 @@ cd ios
 xcodegen generate
 open UsemeApps.xcodeproj
 ```
-
-</details>
 
 ---
 
