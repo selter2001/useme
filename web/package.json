@@ -1,0 +1,8 @@
+{
+  "name": "@portfolio/web",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@portfolio/styles": "*"
+  }
+}

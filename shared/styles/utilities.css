@@ -1,0 +1,230 @@
+/* ====================================
+   UTILITY CLASSES
+   Reusable layout and accessibility utilities
+   ==================================== */
+
+/* --- Container --- */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-page-padding-mobile, 1rem);
+  padding-right: var(--spacing-page-padding-mobile, 1rem);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--spacing-page-padding-desktop, 2rem);
+    padding-right: var(--spacing-page-padding-desktop, 2rem);
+  }
+}
+
+/* --- Accessibility --- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* --- Flexbox Utilities --- */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+/* --- Grid Utilities --- */
+.grid {
+  display: grid;
+  gap: var(--spacing-component-gap, 1.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid-2 {
+  display: grid;
+  gap: var(--spacing-component-gap, 1.5rem);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  display: grid;
+  gap: var(--spacing-component-gap, 1.5rem);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Text Alignment --- */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* --- Display Utilities --- */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* --- Responsive Visibility --- */
+/* Breakpoints: 640px (mobile), 768px (tablet), 1024px (desktop), 1280px (wide) */
+
+.hide-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hide-mobile {
+    display: block;
+  }
+}
+
+.hide-desktop {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+
+/* --- Spacing Utilities --- */
+.gap-sm {
+  gap: var(--spacing-element-gap, 0.75rem);
+}
+
+.gap-md {
+  gap: var(--spacing-component-gap, 1.5rem);
+}
+
+.gap-lg {
+  gap: var(--spacing-section-gap, 3rem);
+}
+
+/* --- Width Utilities --- */
+.w-full {
+  width: 100%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+/* --- Height Utilities --- */
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+/* --- Position Utilities --- */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}

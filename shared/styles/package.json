@@ -1,0 +1,10 @@
+{
+  "name": "@portfolio/styles",
+  "version": "1.0.0",
+  "main": "tokens.css",
+  "files": [
+    "tokens.css",
+    "reset.css",
+    "utilities.css"
+  ]
+}
