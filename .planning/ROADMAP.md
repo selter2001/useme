@@ -13,7 +13,7 @@ This roadmap delivers a complete freelancer portfolio for Useme.com through five
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Design System** - Monorepo structure, shared design tokens, GitHub Pages deployment
-- [ ] **Phase 2: Web Projects** - Portfolio website + service landing page
+- [x] **Phase 2: Web Projects** - Portfolio website + service landing page
 - [ ] **Phase 3: Habit Tracker** - iOS app (SwiftUI) + web demo
 - [ ] **Phase 4: Expense Calculator** - iOS app (SwiftUI) + web demo
 - [ ] **Phase 5: Useme Integration** - Profile optimization, case studies, final polish
@@ -48,9 +48,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Portfolio website with hero, project grid, contact section, and responsive navigation
-- [ ] 02-02-PLAN.md — Landing page with services, testimonials, and EmailJS contact form with validation
-- [ ] 02-03-PLAN.md — Deployment pipeline update and visual verification of both sites
+- [x] 02-01-PLAN.md — Portfolio website with hero, project grid, contact section, and responsive navigation
+- [x] 02-02-PLAN.md — Landing page with services, testimonials, and EmailJS contact form with validation
+- [x] 02-03-PLAN.md — Deployment pipeline update and visual verification of both sites
 
 ### Phase 3: Habit Tracker
 **Goal**: Deliver complete Habit Tracker vertical slice (iOS app + web demo) demonstrating SwiftUI skills
@@ -105,11 +105,11 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Design System | 2/2 | Complete | 2026-02-17 |
-| 2. Web Projects | 0/3 | In progress | - |
+| 2. Web Projects | 3/3 | Complete | 2026-02-17 |
 | 3. Habit Tracker | 0/TBD | Not started | - |
 | 4. Expense Calculator | 0/TBD | Not started | - |
 | 5. Useme Integration | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-02-17*
-*Last updated: 2026-02-17 — Phase 2 planned (3 plans, Web Projects)*
+*Last updated: 2026-02-17 — Phase 2 complete (3/3 plans, Web Projects)*
