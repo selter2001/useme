@@ -162,13 +162,14 @@ body {
 }
 
 .hero-avatar {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 3px solid var(--color-interactive-primary, #22C55E);
   background-color: var(--color-bg-elevated, #262626);
   overflow: hidden;
   margin-bottom: var(--spacing-element-gap, 0.75rem);
+  object-fit: cover;
 }
 
 .hero h1 {
